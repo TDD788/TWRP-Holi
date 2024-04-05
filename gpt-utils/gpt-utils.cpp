@@ -64,7 +64,7 @@
 /******************************************************************************
  * DEFINE SECTION
  ******************************************************************************/
-#define BLK_DEV_FILE    "/dev/block/sde41"
+#define BLK_DEV_FILE    "/dev/block/sde"
 /* list the names of the backed-up partitions to be swapped */
 /* extension used for the backup partitions - tzbak, abootbak, etc. */
 #define BAK_PTN_NAME_EXT    "bak"
