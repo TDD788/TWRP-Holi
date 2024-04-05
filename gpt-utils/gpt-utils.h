@@ -81,9 +81,8 @@ extern "C" {
 #define PTN_XBL                         "xbl"
 #define PTN_XBL_CFG                     "xbl_config"
 #define PTN_MULTIIMGOEM                 "multiimgoem"
-#define PTN_MULTIIMGQTI                 "multiimgqti"
-#define PTN_SWAP_LIST                   PTN_XBL, PTN_XBL_CFG, "sbl1", "rpm", "tz", "aboot", "abl", "hyp", "lksecapp", "keymaster", "cmnlib", "cmnlib32", "cmnlib64", "pmic", "apdp", "devcfg", "hosd", "keystore", "msadp", "mdtp", "mdtpsecapp", "dsp", "aop", "qupfw", "vbmeta", "dtbo", "imagefv", "ImageFv", "multiimgoem", "multiimgqti", "vm-bootsys", "uefisecapp", "shrm", "cpucp", "featenabler", "vendor_boot", "qweslicstore"
-#define AB_PTN_LIST PTN_SWAP_LIST, "boot", "system", "vendor", "odm", "modem", "bluetooth", "system_ext", "product"
+#define PTN_SWAP_LIST                   "ALIGN_TO_128K_1","ALIGN_TO_128K_2","DRIVER","abl_a","abl_b","apdp","apdp_full","bluetooth_a","bluetooth_b","boot_a","boot_b","catecontentfv","catefv","cateloader","cdt","core_nhlos_a","core_nhlos_b","ddr","devcfg_a","devcfg_b","devinfo","dinfo","dsp_a","dsp_b","dtbo_a","dtbo_b","engineering_cdt_a","engineering_cdt_b","featenabler_a","featenabler_b","frp","fsc","fsg","hyp_a","hyp_b","imagefv_a","imagefv_b","keymaster_a","keymaster_b","keystore","last_parti","logdump","logfs","mdm1m9kefs1","mdm1m9kefs2","mdm1m9kefs3","mdm1m9kefsc","mdm1oemnvbktmp","metadata","misc","modem_a","modem_b","modemdump","modemst1","modemst2","multiimgoem_a","multiimgoem_b","ocdt","oplus_sec_a","oplus_sec_b","oplusdycnvbk","oplusreserve1","oplusreserve2","oplusreserve3","oplusreserve4","oplusreserve5","oplusstanvbk_a","oplusstanvbk_b","persist","qupfw_a","qupfw_b","rawdump","rpm_a","rpm_b","secdata","splash_a","splash_b","splash_odm","ssd","storsec","super","toolsfv","tz_a","tz_b","uefisecapp_a","uefisecapp_b","uefivarstore","userdata","vbmeta_a","vbmeta_b","vbmeta_system_a","vbmeta_system_b","vbmeta_vendor_a","vbmeta_vendor_b","vendor_boot_a","vendor_boot_b","vm-data","vm-keystore","vm-system_a","vm-system_b","xbl_a","xbl_b","xbl_config_a","xbl_config_b"
+#define AB_PTN_LIST PTN_SWAP_LIST, "system", "vendor", "odm", "modem" , "system_ext", "product"
 #define BOOT_DEV_DIR    "/dev/block/bootdevice/by-name"
 
 /******************************************************************************
