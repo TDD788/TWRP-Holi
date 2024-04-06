@@ -112,7 +112,11 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # Workaround for error copying vendor files to recovery ramdisk
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_SYSTEMIMAGE_PARTITION_TYPE     := ext4
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE   := ext4
+
+# Rsync error fix or Fixing trying to copy non-existance files
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
@@ -155,7 +159,7 @@ TW_INCLUDE_RESETPROP := true
 TW_FRAMERATE := 60
 			     
 # TWRP specific build flags
-TW_THEME := portrait_hdpi
+TW_THEME := "portrait_hdpi"
 TW_Y_OFFSET := 104
 TW_H_OFFSET := -104
 RECOVERY_SDCARD_ON_DATA := true
