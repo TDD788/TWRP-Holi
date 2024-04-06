@@ -37,17 +37,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno619
 TARGET_USES_HARDWARE_QCOM_BOOTCTRL := true
 QCOM_BOARD_PLATFORMS += $(TARGET_BOARD_PLATFORM)
 
-BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x04C8C000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=4e00000.dwc3 swiotlb=0 loop.max_part=7 cgroup.memory=nokmem,nosocket iptable_raw.raw_before_defrag=1 ip6table_raw.raw_before_defrag=1 kpti=off buildvariant=user androidboot.selinux=enforce
-#BOARD_VENDOR_BASE 0x00000000
-B#OARD_NAME
-BOARD_PAGE_SIZE 4096
-BOARD_KERNEL_OFFSET 0x00008000
-BOARD_RAMDISK_OFFSET 0x01000000
-#BOARD_TAGS_OFFSET 0x00000100
-BOARD_HEADER_VERSION 3
-BOARD_HEADER_SIZE 1580
-#BOARD_DTB_SIZE 4607565
-B#OARD_DTB_OFFSET 0x01f00000
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x04C8C000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=4e00000.dwc3 swiotlb=0 loop.max_part=7 cgroup.memory=nokmem,nosocket iptable_raw.raw_before_defrag=1 ip6table_raw.raw_before_defrag=1 kpti=off buildvariant=user androidboot.selinux=permissive
+BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_BASE          := 0x00000000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
@@ -58,7 +50,6 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE) --board ""
 BOARD_MKBOOTIMG_ARGS += --cmdline "twrpfastboot=1"
-
 
 # Kernel dtb
 #TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
