@@ -186,5 +186,5 @@ TW_BACKUP_EXCLUSIONS := /data/fonts
 
 # Custom TWRP Versioning
 ifeq ($(TW_DEVICE_VERSION),)
-TW_DEVICE_VERSION=Test_v1
+TW_DEVICE_VERSION=Test_v2ByAZMATH
 endif
