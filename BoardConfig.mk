@@ -20,8 +20,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
-ENABLE_CPUSETS := true
-ENABLE_SCHEDBOOST := true
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -39,9 +37,17 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno619
 TARGET_USES_HARDWARE_QCOM_BOOTCTRL := true
 QCOM_BOARD_PLATFORMS += $(TARGET_BOARD_PLATFORM)
 
-BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x04C8C000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=4e00000.dwc3 swiotlb=0 loop.max_part=7 cgroup.memory=nokmem,nosocket iptable_raw.raw_before_defrag=1 ip6table_raw.raw_before_defrag=1 kpti=off buildvariant=user androidboot.selinux=permissive
-BOARD_KERNEL_PAGESIZE := 4096
-BOARD_KERNEL_BASE          := 0x00000000
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x04C8C000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=4e00000.dwc3 swiotlb=0 loop.max_part=7 cgroup.memory=nokmem,nosocket iptable_raw.raw_before_defrag=1 ip6table_raw.raw_before_defrag=1 kpti=off buildvariant=user androidboot.selinux=enforce
+#BOARD_VENDOR_BASE 0x00000000
+B#OARD_NAME
+BOARD_PAGE_SIZE 4096
+BOARD_KERNEL_OFFSET 0x00008000
+BOARD_RAMDISK_OFFSET 0x01000000
+#BOARD_TAGS_OFFSET 0x00000100
+BOARD_HEADER_VERSION 3
+BOARD_HEADER_SIZE 1580
+#BOARD_DTB_SIZE 4607565
+B#OARD_DTB_OFFSET 0x01f00000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
@@ -55,12 +61,12 @@ BOARD_MKBOOTIMG_ARGS += --cmdline "twrpfastboot=1"
 
 
 # Kernel dtb
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+#TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+#BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 # Kernel dtbo
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_INCLUDE_RECOVERY_DTBO := true
+#BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+#BOARD_KERNEL_SEPARATED_DTBO := true
+#BOARD_INCLUDE_RECOVERY_DTBO := true
 
 
 #A/B
@@ -90,11 +96,14 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 167772160
+#BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 167772160
+
+
 
 # Dynamic Partition
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
-# BOARD_QTI_DYNAMIC_PARTITIONS_SIZ=BOARD_SUPER_PARTITION_SIZE - 13MB
+# BOARD_QTI_DYNAMIC_PARTITIONS_SIZE=BOARD_SUPER_PARTITION_SIZE - 13MB
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
