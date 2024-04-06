@@ -40,13 +40,14 @@ on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     start boot-hal-1-1
     setprop sys.usb.config adb
+    setprop prepdecrypt.setpatch true
+    setprop prepdecrypt.loglevel 2
     # Create location for fs_mgr to store abbreviated output from filesystem
     # checker programs.
     mkdir /dev/fscklogs 0770 root system
     
 on boot
     setprop sys.usb.config mtp,adb
-    setprop prepdecrypt.loglevel 2
     
 on property:twrp.modules.loaded=true
     # Load ADSP firmware for PMIC
