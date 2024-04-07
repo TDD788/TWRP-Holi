@@ -121,7 +121,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.base@1.0 \
@@ -159,7 +159,7 @@ TW_INCLUDE_RESETPROP := true
 TW_FRAMERATE := 60
 			     
 # TWRP specific build flags
-TW_THEME := "portrait_hdpi"
+TW_THEME := portrait_hdpi
 TW_Y_OFFSET := 104
 TW_H_OFFSET := -104
 RECOVERY_SDCARD_ON_DATA := true
@@ -170,9 +170,9 @@ TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
 TW_NO_EXFAT_FUSE := true
 TW_USE_TOOLBOX := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone26/temp"
+TW_INPUT_BLACKLIST := hbtp_vm
+TW_BRIGHTNESS_PATH := /sys/class/backlight/panel0-backlight/brightness
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone26/temp
 TW_MAX_BRIGHTNESS := 4095
 TW_DEFAULT_BRIGHTNESS := 1023
 TWRP_INCLUDE_LOGCAT := true
