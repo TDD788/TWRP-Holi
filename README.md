@@ -51,11 +51,7 @@
 
 #I have used his Templates For Making Device Tree Stable @https://github.com/Spector0/
 
-#Thanx  to YOu TOO :) @https://github.com/TDD788/
-
 #Lazy_Action-Recoverys-Builder for His Custom Scripts Workflows to be complete @https://github.com/lazycodebuilder/
-
-#For His DT Buider Temptlate. @https://github.com/Xpsoted/
 
 #
 #Copyright (C) 2024 The Android Open Source Project
@@ -64,3 +60,5 @@
 
 #SPDX-License-Identifier: Apache-2.0
 #
+
+**Thanx  to YOu TOO**
