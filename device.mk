@@ -76,8 +76,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
-namespace.default.isolated = false
-namespace.default.search.paths = /system/${LIB}
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
