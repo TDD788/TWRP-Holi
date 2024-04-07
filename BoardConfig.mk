@@ -104,7 +104,7 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     odm
 
 # System as root
-BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist
+BOARD_ROOT_EXTRA_FOLDERS := my_product my_manifest my_bigball my_heytap my_engineering my_preload my_region my_reserve my_stock my_version my_company my_custom my_carrier etc special_preload opporeserve  
 BOARD_SUPPRESS_SECURE_ERASE := true
 
 # File systems
