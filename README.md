@@ -32,6 +32,8 @@
 ------------------------------------**Bugs**----------------------------------------------------------------------------------------------------------------------------
 ._[]FBE-had to erase metadata evrytime we boot between System/Recovery_.
 
+**I am Not Responsible For Any Data Loss**
+
 ._[]Flashlight_.
 
 **._You Tell Me ;)_.**
