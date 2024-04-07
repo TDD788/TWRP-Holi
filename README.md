@@ -6,7 +6,7 @@
 
 1. adb reboot fastboot or bootloader
    
-2. fastboot flash boot ORFP_Recovery-ramdisk[Installer].img
+2. fastboot flash boot OFRP_Recovery-ramdisk[Installer].img
  
 3. fastboot erase metadata
    
