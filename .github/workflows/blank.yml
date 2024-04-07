@@ -1,7 +1,7 @@
 name: Make TWRP Device
 
 on:
-  workflow_dispatch: 'Make TWRP Device'
+  workflow_dispatch: 
     inputs:
       IMG_URL: 'https://www.dropbox.com/scl/fi/73e3n048dgr3hh5a7rn8x/boot.img?rlkey=k7gq3zeluame7uyaxlwsohb8p&dl=0'   
         description: 'IMG_URL'
