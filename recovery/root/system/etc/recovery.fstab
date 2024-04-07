@@ -60,7 +60,8 @@ my_engineering                             /my_engineering        erofs   ro    
 #common_preload /common_preload ext4 ro wait,logical,first_stage_mount
 /dev/block/by-name/preload /special_preload ext4 ro wait
 /dev/block/by-name/metadata                /metadata       ext4    noatime,nosuid,nodev,discard                         wait,formattable,first_stage_mount
-/dev/block/bootdevice/by-name/userdata      /data          f2fs    noatime,nosuid,nodev,discard,inlinecrypt,reserve_root=32768,resgid=1065,fsync_mode=nobarrier    latemount,resize,wait,check,formattable,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption,metadata_encryption=aes-256-xts:wrappedkey_v0,quota,reservedsize=128M,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc,checkpoint=fs,fscompress
+/data            f2fs       /dev/block/bootdevice/by-name/userdata                flags=fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0;keydirectory=/metadata/vold/metadata_encryption;metadata_encryption=aes-256-xts:wrappedkey_v0
+/storage         ext4       /data/media/0                                         flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
 /dev/block/mmcblk1p1                       /external_sd    vfat    nosuid,nodev                                                    defaults
 #Shuangquan.Du@PSW.AD.Recovery.0, 2018/07/21, Add for usb otg
 /dev/block/sdg1                            /usb_otg        vfat    nosuid,nodev                                                    defaults
