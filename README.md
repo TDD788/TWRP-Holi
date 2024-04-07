@@ -4,15 +4,15 @@
 #
 # **Instructions**
 
-1. adb reboot fastboot
+1. adb reboot fastboot or bootloader
    
 2. fastboot flash boot ORFP_Recovery-ramdisk[Installer].img
  
 3. fastboot erase metadata
    
-4. fastboot reboot recovery
+4. fastboot reboot recovery or Use Keys From Bootloader Menu To Boot Into Recovery
  
-5. Install stock boot.img as boot in OFRP Recovery
+5. Install stock boot.img as Boot Partition in OFRP Recovery
  
 6. Install OrangeFox-Unofficial-holi.img as Recovery ramdisk.
     
@@ -41,6 +41,8 @@
 **._You Tell Me ;)_.**
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
+**This Repo Also contains Action Workflow For Building Latest Device Tree From [Boot.img/Recovery.img(if_exists)]**
+
 # Credits/
 
 #For Action Builder @https://github.com/azwhikaru
@@ -52,6 +54,8 @@
 #Thanx  to YOu TOO :) @https://github.com/TDD788
 
 #Lazy_Action-Recoverys-Builder for His Custom Scripts Workflows to be complete @https://github.com/lazycodebuilder
+
+#For His DT Temptlate. @https://github.com/Xpsoted
 
 #
 #Copyright (C) 2024 The Android Open Source Project
