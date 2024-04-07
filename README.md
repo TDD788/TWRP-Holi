@@ -1,4 +1,8 @@
-█▓▒▒░░░OnePlus Nord CE 3 Lite 5G Action Builder |TWRP / PBRP / OFRP / SHRP|░░░▒▒▓█
+#
+█▓▒▒░░░¸¸♬·¯·♪·¯·♫¸¸ ＯｎｅＰｌｕｓ Ｎｏｒｄ ＣＥ ３ Ｌｉｔｅ ５Ｇ🦴🐾
+Ａｃｔｉｏｎ Ｂｕｉｌｄｅｒ |ＴＷＲＰ / ＰＢＲＰ / ＯＦＲＰ / ＳＨＲＰ|░░░▒▒▓█
+#
+
 #
 #Copyright (C) 2024 The Android Open Source Project
 #Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
