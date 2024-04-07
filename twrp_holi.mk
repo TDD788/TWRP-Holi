@@ -22,3 +22,10 @@ PRODUCT_NAME := twrp_holi
 PRODUCT_BRAND := qualcomm
 PRODUCT_MODEL := qualcomm
 PRODUCT_MANUFACTURER := qualcomm
+
+# Make Dir For Inherit From Stock
+dir.recovery = /system/bin
+[recovery]
+namespace.default.isolated = false
+namespace.default.search.paths = /system/${LIB}
+
