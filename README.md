@@ -45,17 +45,17 @@
 
 # Credits/
 
-#For Action Builder @github.com/azwhikaru
+#For Action Builder @https://github.com/azwhikaru/
 
-#twrpdtgen For DeviceTree @github.com/twrpdtgen
+#twrpdtgen For DeviceTree @https://github.com/twrpdtgen/
 
-#I have used his Templates For Making Device Tree Stable @github.com/Spector0
+#I have used his Templates For Making Device Tree Stable @https://github.com/Spector0/
 
-#Thanx  to YOu TOO :) @github.com/TDD788
+#Thanx  to YOu TOO :) @https://github.com/TDD788/
 
-#Lazy_Action-Recoverys-Builder for His Custom Scripts Workflows to be complete @github.com/lazycodebuilder
+#Lazy_Action-Recoverys-Builder for His Custom Scripts Workflows to be complete @https://github.com/lazycodebuilder/
 
-#For His DT Temptlate. @github.com/Xpsoted
+#For His DT Buider Temptlate. @https://github.com/Xpsoted/
 
 #
 #Copyright (C) 2024 The Android Open Source Project
