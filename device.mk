@@ -32,9 +32,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Configure Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-# Configure SDCard replacement functionality
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
 # Configure twrp
 $(call inherit-product, vendor/twrp/config/common.mk)
 
@@ -74,7 +71,7 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_TARGET_VNDK_VERSION := 30
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.crypto.dm_default_key.options_format.version=2
+    ro.crypto.dm_default_key.options_format.version= 2
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
