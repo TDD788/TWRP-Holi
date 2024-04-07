@@ -1,6 +1,6 @@
 -------------------------------------------------------------------------------------------------------------------------------
+OnePlus Nord CE 3 Lite 5G Action Builder |TWRP / PBRP / OFRP / SHRP|
 #
-#OnePlus Nord CE 3 Lite 5G Custom Recoveries Builder using Github Actions
 #Copyright (C) 2024 The Android Open Source Project
 #Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
 #SPDX-License-Identifier: Apache-2.0
