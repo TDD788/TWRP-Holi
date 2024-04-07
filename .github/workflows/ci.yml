@@ -39,6 +39,7 @@ jobs:
       - name: env
         run: |
           sudo apt-get update -y
+          sudo apt-get upgrade -y
           sudo apt-get install -y git wget curl openssh-server cpio python3 python3-setuptools
           pip3 install twrpdtgen
           pip3 install protobuf
