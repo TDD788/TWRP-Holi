@@ -20,23 +20,23 @@
 # **._Voila Now You Have OFRP_.**
 ------------------------------------**What's Working**---------------------------------------------------------------------------------------------
 
-._[]Installation of Zip/Img_.
+._Installation of Zip/Img_.
 
-._[]FastbootD_.
+._FastbootD_.
 
-._[]Backup/Restore_.
+._Backup/Restore_.
 
-._[]MTP,ADB_.
+._MTP,ADB_.
 
-._[]ADB SideloaD_.
+._ADB SideloaD_.
 
 ------------------------------------**Bugs**-------------------------------------------------------------------------------------------------------
 
-._[]FBE-had to erase metadata evrytime we boot between System/Recovery_.
+._FBE-had to erase metadata evrytime we boot between System/Recovery_.
 
 **I am Not Responsible For Any Data Loss**
 
-._[]Flashlight_.
+._Flashlight_. (Who Cares)
 
 **._You Tell Me ;)_.**
 
