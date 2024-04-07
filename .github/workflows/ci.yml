@@ -14,23 +14,23 @@ on:
        username:
          description: 'Username'
          required: true
-         default: 'laityts'
+         default: 'IamAzmathullaShaikh'
        email:
          description: 'E-Mail'
          required: true
-         default: 'laityts@gmail.com'
+         default: 'iamshaikhazmathulla@gmail.com'
        filelink:
          description: 'ROM LINK(Support gdrive link)'
          required: true
        path:
          description: 'Device Tree Path'
          required: true
-         default: 'android_device_xiaomi_ginkgo-twrp'
+         default: 'larry_device_tree-TWRP'
 
 jobs:
   twrpdtgen:
     runs-on: ubuntu-18.04
-    continue-on-error: false
+    continue-on-error: true
 
     steps:
       - name: checkout
