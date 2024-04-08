@@ -41,7 +41,7 @@
 **._You Tell Me ;)_.**
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-**This Repo Also contains Action Workflow For Building Latest Device Tree From [Boot.img/Recovery.img(if_exists)]**
+**This Repo Also contains Action Workflow For Building Latest Builds**
 
 # Credits/
 
