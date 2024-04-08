@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oneplus/oscar
+DEVICE_PATH := device/qualcomm/holi
 
 # Architecture
 TARGET_ARCH := arm64
