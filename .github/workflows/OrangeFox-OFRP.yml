@@ -1,5 +1,9 @@
 name: OrangeFox [OFRP]
-
+# Credits to:
+# https://github.com/TeamWin
+# https://gitlab.com/OrangeFox
+# https://github.com/azwhikaru for Recovery Builder Template
+# And all Contributors in every repositories I used
 on:
   workflow_dispatch:
     inputs:
@@ -19,7 +23,7 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree'
         required: true
-        default: 'https://github.com/IamAzmathullaShaikh/TWRP-Holi.git'
+        default: 'https://github.com/IamAzmathullaShaikh/OnePlus_larry_Device.git'
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch'
         required: true
@@ -54,7 +58,7 @@ on:
 jobs:
   build:
     name: Build OFRP by ${{ github.actor }}
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
