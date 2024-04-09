@@ -73,6 +73,14 @@ PRODUCT_ENFORCE_VINTF_MANIFEST := true
 # SHIPPING API
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0.vendor
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor
+
 # VNDK API
 PRODUCT_TARGET_VNDK_VERSION := 30
 
