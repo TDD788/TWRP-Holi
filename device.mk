@@ -40,6 +40,9 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_PACKAGES += \
     bootctrl.holi.recovery \
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-impl.recovery \
+    android.hardware.boot@1.2-service \
     android.hardware.boot@1.1-impl-qti.recovery
     
 PRODUCT_PACKAGES += \
