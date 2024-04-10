@@ -116,7 +116,7 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     odm
 
 # System as root
-BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist
+BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist my_product my_manifest my_engineering my_preload my_heytap my_stock my_company my_bigball my_region my_carrier
 BOARD_SUPPRESS_SECURE_ERASE := true
 
 # File systems
@@ -148,7 +148,7 @@ TW_INCLUDE_CRYPTO := false
 TW_INCLUDE_CRYPTO_FBE := false
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 BOARD_USES_METADATA_PARTITION := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := false
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 VENDOR_SECURITY_PATCH := 2021-08-01
 PLATFORM_SECURITY_PATCH := 2099-12-31
 TW_USE_FSCRYPT_POLICY := 2
