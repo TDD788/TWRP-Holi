@@ -7,11 +7,36 @@
 
 DEVICE_PATH := device/qualcomm/holi
 
-# Release name
-PRODUCT_RELEASE_NAME := holi
+# Configure base.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
+# Configure core_64_bit_only.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+
+# Configure gsi_keys.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
+# Configure Virtual A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
+# Configure SDCard replacement functionality
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+# Configure twrp
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from holi device
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)
+
+# Copy modules for depmod
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(DEVICE_PATH)/prebuilt,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules)
+
+# Release name
+PRODUCT_RELEASE_NAME := holi
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := holi
