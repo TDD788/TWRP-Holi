@@ -33,7 +33,7 @@ export FOX_BUILD_DEVICE="holi"
 export_build_vars(){
 	echo -e "${GREEN}Exporting build vars from the a12s tree${RESET}"
         #Important Build Flags
-        export FOX_VANILLA_BUILD=1
+        #export FOX_VANILLA_BUILD=1
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 	export FOX_DELETE_AROMAFM=0
 	export OF_CLOCK_POS=1
