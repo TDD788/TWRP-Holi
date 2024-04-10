@@ -52,7 +52,6 @@ export_build_vars(){
 	
 	# Tools and Utilities Configurations
 	export OF_OTA_BACKUP_STOCK_BOOT_IMAGE=1
-	export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
 	export OF_USE_LZ4_COMPRESSION=1
 	export OF_ENABLE_FS_COMPRESSION=1
 	export OF_HIDE_NOTCH=1
