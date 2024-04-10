@@ -31,7 +31,7 @@ export TARGET_DEVICE_ALT="holi, CPH2467, NordCE3Lite"
 export FOX_BUILD_DEVICE="holi"
 	
 export_build_vars(){
-	echo -e "${GREEN}Exporting build vars from the a12s tree${RESET}"
+	echo -e "${GREEN}Exporting build vars from the holi tree${RESET}"
         #Important Build Flags
         export FOX_VANILLA_BUILD=1
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
@@ -45,7 +45,6 @@ export_build_vars(){
 	export OF_OPTIONS_LIST_NUM=8
 	export FOX_DELETE_INITD_ADDON=1 # !- Causes bootloops sometimes -!
 	export FOX_ENABLE_APP_MANAGER=1
-	export OF_USE_SAMSUNG_HAPTICS=1
         export OF_USE_SYSTEM_FINGERPRINT=0
         
 	# Security Configurations
@@ -89,15 +88,15 @@ set_env_var(){
         echo -e "${RED_BACK}Environment Variable CURR_DEVICE not set... Aborting${RESET}"
         echo "Set to the codename of the device you're building for"
         echo -e "${GREEN}Example :${RESET}"
-        echo " export CURR_DEVICE=a12s"
+        echo " export CURR_DEVICE=holi"
         exit 1
 }
 
 var_not_eq(){
-        echo -e "${RED_BACK}CURR_DEVICE not equal to a12s${RESET}"
+        echo -e "${RED_BACK}CURR_DEVICE not equal to holi${RESET}"
         echo -e "${RED_BACK}CURR_DEVICE = $CURR_DEVICE${RESET}"
         echo -e "${RED}If this is a mistake, then export CURR_DEVICE to the correct codename${RESET}"
-        echo -e "${RED}Skipping a12s specific build vars...${RESET}"
+        echo -e "${RED}Skipping holi specific build vars...${RESET}"
 }
 
 case "$CURR_DEVICE" in
