@@ -24,11 +24,6 @@ export FOX_USE_SED_BINARY=1
 export FOX_USE_TAR_BINARY=1
 export FOX_USE_UNZIP_BINARY=1
 export FOX_USE_XZ_UTILS=1
-
-echo "Target Device"
-export FOX_TARGET_DEVICES="holi, CPH2467, NordCE3Lite"
-export TARGET_DEVICE_ALT="holi, CPH2467, NordCE3Lite"
-export FOX_BUILD_DEVICE="holi"
 	
 export_build_vars(){
 	echo -e "${GREEN}Exporting build vars from the holi tree${RESET}"
