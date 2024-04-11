@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/qualcomm/holi
 
+# For building with minimal manifest
+ALLOW_MISSING_DEPENDENCIES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -29,7 +32,9 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_BOARD_SUFFIX := _64
-TARGET_USES_64_BIT_BINDER := true
+
+TARGET_USES_64_BIT_BINDER   := true
+TARGET_SUPPORTS_64_BIT_APPS := true
 
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
@@ -38,6 +43,7 @@ ENABLE_SCHEDBOOST := true
 PRODUCT_PLATFORM := holi
 TARGET_BOOTLOADER_BOARD_NAME := $(PRODUCT_RELEASE_NAME)
 TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
 TARGET_USES_UEFI := true
 TARGET_NO_RECOVERY := true
 
@@ -63,8 +69,6 @@ BOARD_MKBOOTIMG_ARGS += --cmdline "twrpfastboot=1"
 
 
 # Kenel dtb
-
-
 # TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 # BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
