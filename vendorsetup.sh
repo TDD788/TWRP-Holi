@@ -1,4 +1,4 @@
-FDEVICE1="holi"
+FDEVICE1="NordCE3Lite/N00BCODER"
 CURR_DEVICE="holi"
 
 RED_BACK="\e[101m"
@@ -30,10 +30,10 @@ export_build_vars(){
         #Important Build Flags
         export FOX_VANILLA_BUILD=1
 	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
-	export FOX_DELETE_AROMAFM=0
+	export FOX_DELETE_AROMAFM=1
 	export OF_CLOCK_POS=1
         export OF_CHECK_OVERWRITE_ATTEMPTS=1
-	export OF_QUICK_BACKUP_LIST="/system_root;/vendor;/data;/boot;"
+	export OF_QUICK_BACKUP_LIST="/system_root;/vendor;/data;/boot;/odm"
 	export OF_STATUS_INDENT_RIGHT=48
 	export OF_STATUS_INDENT_LEFT=48
 	export OF_OPTIONS_LIST_NUM=8
